@@ -51,7 +51,7 @@ Digital Only, EGFX 還沒跑完
       <td><audio controls=""><source src="./assets/audios/a/hgl_12.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
-      <td>24</audio></td>
+      <td>24</td>
       <td><audio controls=""><source src="./assets/audios/a/rd_24.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/ct_24.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/ft_24.wav" type="audio/mpeg" /></audio></td>
@@ -61,8 +61,6 @@ Digital Only, EGFX 還沒跑完
       <td><audio controls=""><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
     </tr>
-  </tbody>
-  <tfoot>
     <tr>
       <td>36</td>
       <td><audio controls=""><source src="./assets/audios/a/rd_36.wav" type="audio/mpeg" /></audio></td>
@@ -74,7 +72,7 @@ Digital Only, EGFX 還沒跑完
       <td><audio controls=""><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
     </tr>
-  </tfoot>
+  </tbody>
 </table>
 
 
