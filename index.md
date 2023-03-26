@@ -40,7 +40,7 @@ Digital Only, EGFX 還沒跑完
     <tr>
       <td rowspan="0">A</td>
       <td>12</td>
-      <td rowspan="0"><audio controls="" style="width: 60px;"><source src="./assets/audios/a/clean.wav" type="audio/mpeg" /></audio></td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/a/clean.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/rd_12.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/ct_12.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls=""><source src="./assets/audios/a/ft_12.wav" type="audio/mpeg" /></audio></td>
