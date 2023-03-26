@@ -41,36 +41,36 @@ Digital Only, EGFX 還沒跑完
       <td rowspan="0">A</td>
       <td>12</td>
       <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/a/clean.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/rd_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ct_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ft_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hts_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/htl_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/fg_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_12.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/rd_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ct_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ft_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hts_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/htl_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/fg_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_12.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_12.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>24</td>
-      <td><audio controls=""><source src="./assets/audios/a/rd_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ct_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ft_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hts_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/htl_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/fg_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/rd_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ct_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ft_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hts_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/htl_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/fg_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_24.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>36</td>
-      <td><audio controls=""><source src="./assets/audios/a/rd_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ct_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/ft_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hts_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/htl_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/fg_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls=""><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/rd_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ct_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/ft_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hts_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/htl_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/fg_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/a/hgl_36.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
