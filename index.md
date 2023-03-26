@@ -1,3 +1,5 @@
+This is the demo page
+
 ## Abstract
 Distortion Effect Modeling 
 - Digital (GuitarZK)
@@ -6,7 +8,7 @@ Distortion Effect Modeling
 ### Audio Samples
 
 <hr>
-We provide 3 sets of sound files for digital and analog modeling. Each set contains the clean tone, real distortion and the emulated sound by the neural network.
+We provide 2 sets of sound files for digital and analog modeling. Each set contains the clean tone, real distortion and the emulated sound by the neural network.
 
 <hr>
 
@@ -126,6 +128,108 @@ We provide 3 sets of sound files for digital and analog modeling. Each set conta
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/b/fg_48.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/b/hgl_48.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/b/hgl_48.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+#### EGFX
+
+<table style='text-align: center;'>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Effect Type</td>
+      <td>Clean</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>HTS</td>
+      <td>HTL</td>
+      <td>FG</td>
+      <td>HGS</td>
+      <td>HGL</td>
+    </tr>
+    <tr>
+      <td rowspan="0">A</td>
+      <td>RAT</td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/c/clean.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>BluesDriver</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>TubeScreamer</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table style='text-align: center;'>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Effect Type</td>
+      <td>Clean</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>HTS</td>
+      <td>HTL</td>
+      <td>FG</td>
+      <td>HGS</td>
+      <td>HGL</td>
+    </tr>
+    <tr>
+      <td rowspan="0">B</td>
+      <td>RAT</td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/d/clean.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>BluesDriver</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>TubeScreamer</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
