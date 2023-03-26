@@ -16,8 +16,8 @@ def peak_normalize(input_audio, db=-24.0):
     return input_audio
 
 if __name__ == "__main__":
-    data_location = 'assets/audios/1'
-    save_location = 'assets/audios/a'
+    data_location = 'assets/audios/2'
+    save_location = 'assets/audios/b'
     files = get_files(data_location, 'wav')
 
     for f in files:
