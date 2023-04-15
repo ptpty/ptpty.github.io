@@ -1,14 +1,13 @@
 This is the demo page
 
 ## Abstract
-Distortion Effect Modeling 
-- Digital (GuitarZK)
-- Analog (EGFX)
+Effect Modeling 
+
 
 ### Audio Samples
 
 <hr>
-We provide 2 sets of sound files for digital and analog modeling. Each set contains the clean tone, real distortion and the emulated sound by the neural network.
+ttttttttttttttttttt
 
 <hr>
 
