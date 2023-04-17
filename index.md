@@ -29,15 +29,11 @@ The above situation shows the following problems:
 #### Case 1
 ![Audio0](./assets/case_0/bias_variation_test.png 'Audio0')
 
-
-FiLM-TCN: 
-<audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
-<br>
-Hyper-GCN: 
-<audio controls=""><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
+FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
 
 #### Case 2
-![Audio1](./assets/case_1/signal_spec_change.png 'Audio1')
+![Audio1](./assets/case_1/signal_spec.png 'Audio1')
 
 
 FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
