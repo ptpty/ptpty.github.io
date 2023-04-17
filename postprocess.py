@@ -17,18 +17,20 @@ def peak_normalize(input_audio, db=-24.0):
 
 if __name__ == "__main__":
     x_size = 1100
-    y_size = 300
+    y_size = 400
 
     img = cv2.imread('/Users/yeh/Desktop/ptpty.github.io/assets/case_0/bias_variation_0.png')
     size = (img.shape[1], img.shape[0])
-    
+    print(size)
     img = cv2.resize(img, (x_size, y_size), interpolation=cv2.INTER_AREA)
 
     cv2.imwrite('/Users/yeh/Desktop/ptpty.github.io/assets/case_0/bias_variation_0_change.png', img)
 
+    '''
     img = cv2.imread('/Users/yeh/Desktop/ptpty.github.io/assets/case_1/signal_spec.png')
     size = (img.shape[1], img.shape[0])
     
     img = cv2.resize(img, (x_size, y_size), interpolation=cv2.INTER_AREA)
 
     cv2.imwrite('/Users/yeh/Desktop/ptpty.github.io/assets/case_1/signal_spec_change.png', img)
+    '''
