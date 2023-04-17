@@ -27,7 +27,7 @@ The above situation shows the following problems:
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 
 #### Case 1
-![Audio1](./assets/case_1/bias_variation_test.png 'Audio1')
+![Audio1](./assets/case_0/bias_variation_test.png 'Audio1')
 
 
 FiLM-TCN: 
