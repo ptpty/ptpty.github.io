@@ -34,8 +34,8 @@ We input silence into both models and analyze their respective outputs. As illus
 <hr>
 ![Audio0](./assets/case_0/bias_variation_test.png 'Audio0')
 
-FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn_silence.wav" type="audio/mpeg" /></audio>
-Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn_silence.wav" type="audio/mpeg" /></audio>
+FiLM-TCN: <audio controls=""><source src="./assets/case_0/film_tcn_silence.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls=""><source src="./assets/case_0/hyper_gcn_silence.wav" type="audio/mpeg" /></audio>
 
 #### Case 2
 <hr>
