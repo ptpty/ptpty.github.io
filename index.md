@@ -11,24 +11,22 @@ Micro-temporal convolutional network (micro-TCN) has gained popularity as a prom
 <br>
 Observation in three secanrios. 
 <br>
-<br>
 (a) Given a silent input, the output of the FiLM-TCN has unexpectedly a DC shift, while the proposed bias-free model Hyper-GCN does not.
 <br>
 <br>
 (b) The incurred DC shift varies as a function of the imposed condition parameter for FiLM-TCN, while there is no DC bias at all for Hyper-GCN.
 <br>
 <br>
-(c) After receiving a non-silent input, we compute the mean amplitude of the output produced by the FiLM-TCN. We observe that The trend of DC bias variation is very similar to (b)..
+(c) After receiving a non-silent input, we compute the mean amplitude of the output produced by the FiLM-TCN. We observe that the trend of DC bias variation is very similar to (b).
 <br>
 
-<br>
 <br>
 <br>
 The above situation shows the following problems:
 1. If a silent input is fed into the model and produces a non-silent output, it may result in an unexpected popping sound or noise.
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 
-
+#### Silent Input 
 
 ## Audio Samples
 
