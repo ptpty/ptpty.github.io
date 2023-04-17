@@ -27,10 +27,16 @@ The above situation shows the following problems:
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 
 #### Case 1
-<img src="./assets/case_0/bias_variation_0_change.png" width="1000" height="400">
+![Audio1](./assets/case_1/bias_variation_test.png 'Audio1')
+
+
+FiLM-TCN: 
+<audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
 
 #### Case 2
 ![Audio1](./assets/case_1/signal_spec_change.png 'Audio1')
+
 
 FiLM-TCN: 
 <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
