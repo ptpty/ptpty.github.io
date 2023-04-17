@@ -3,7 +3,7 @@ import pathlib
 import torch 
 import numpy as np 
 import soundfile as sf
-
+import cv2
 
 def get_files(data_location, extension):
     return list(pathlib.Path(data_location).rglob(f"*.{extension}"))
@@ -16,22 +16,9 @@ def peak_normalize(input_audio, db=-24.0):
     return input_audio
 
 if __name__ == "__main__":
-    data_location = 'assets/audios/4'
-    save_location = 'assets/audios/d'
-    files = get_files(data_location, 'wav')
+    img = cv2.imread('/Users/yeh/Desktop/ptpty.github.io/assets/case_0/bias_variation_0.png')
+    size = (img.shape[1], img.shape[0])
+    
+    ime = cv2.resize(img, (800, 600), interpolation=cv2.INTER_AREA)
 
-    for f in files:
-        f = str(f)
-        f_name = f.split('/')[-1]
-        print('> f name: ', f_name)
-
-        wav, sr = sf.read(f)
-        print('> wav length: ', len(wav))
-        print('> sr: ', sr)
-
-        wav = peak_normalize(wav)
-        print(f'> max: {np.max(wav)} min: {np.min(wav)}')
-
-        new_path = os.path.join(save_location, f_name)
-        sf.write(new_path, wav, sr)
-        
+    cv2.imwrite('/Users/yeh/Desktop/ptpty.github.io/assets/case_0/bias_variation_0_change.png', img)
