@@ -31,8 +31,8 @@ The above situation shows the following problems:
 
 
 FiLM-TCN: 
-<audio controls="" style="width: 250px;"><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
-Hyper-GCN: <audio controls="" style="width: 250px;"><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
+<audio controls="" style="width: 200px;"><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls="" style="width: 200px;"><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
 
 #### Case 2
 ![Audio1](./assets/case_1/signal_spec_change.png 'Audio1')
