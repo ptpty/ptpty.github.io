@@ -27,12 +27,18 @@ The above situation shows the following problems:
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 
 #### Case 1
+<hr>
+We input silence into both models and analyze their respective outputs. As illustrated in the figure, the output of the FiLM-TCN model is no longer silent, with most of the energy concentrated at 0Hz. In contrast, our proposed Hyper-GCN model can accurately output silence as expected. We provide listening files for the below two spectrograms. 
+<hr>
 ![Audio0](./assets/case_0/bias_variation_test.png 'Audio0')
 
-FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
-Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
+FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn_silence.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn_silence.wav" type="audio/mpeg" /></audio>
 
 #### Case 2
+<hr>
+We fed the audio to both models, with pre-silence included. As depicted in the upper figure, we noticed that FiLM-TCN produced an unexpected low-frequency sound (0 Hz) throughout the entire audio. Particularly, we can observe the artifact's impact during the preceding 2.5 seconds and the segment between 3.5 to 4 seconds. The proposed Hyper-GCN is free from such artifacts. 
+<hr>
 ![Audio1](./assets/case_1/signal_spec.png 'Audio1')
 
 
