@@ -26,12 +26,17 @@ The above situation shows the following problems:
 1. If a silent input is fed into the model and produces a non-silent output, it may result in an unexpected popping sound or noise.
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 
-#### Silent Input 
+
+#### case 2
+![Audio1](./assets/case_1/signal_spec.png 'Audio1')
+
+FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
+Hyper-GCN: <audio controls=""><source src="./assets/case_1/hyper_gcn.wav" type="audio/mpeg" /></audio>
 
 ## Audio Samples
 
 <hr>
-We have provided two sets of audio files for each simulated effect in our experiments. Each sets contains DI, real, and results simulated by different models. The duration of each listening file is about 5-10 seconds. The detailed information is shown below. 
+We have provided two sets of audio files for each simulated effect in our experiments. Each sets contains DI, real, and results simulated by different models. The duration of each listening file is about 5 seconds. The detailed information is shown below. 
 <hr>
 
 1. `DI`: clean audio which is considered to be the input to our model. 
