@@ -7,11 +7,14 @@ Micro-temporal convolutional network (micro-TCN) has gained popularity as a prom
 ## Motivation 
 
 Observation in three secanrios. 
-![Bias Variation](./assets/imgs/bias_variation.png 'Bias Variation')
+<img src="./assets/imgs/bias_variation.png" width="400" height="300">
 
 (a) Given a silent input, the output of the FiLM-TCN has unexpectedly a DC shift, while the proposed bias-free model Hyper-GCN does not.
+<br>
 (b) The incurred DC shift varies as a function of the imposed condition parameter for FiLM-TCN, while there is no DC bias at all for Hyper-GCN.
+<br>
 (c) Given a non-silent input, we calculate the mean amplitude of the output of the FiLM-TCN. We can see that the DC bias variation is similar to (b). 
+<br>
 
 The above situation shows the following problems:
 1. When silent input to the model is not silent out, the unexpected pop sound or the unexpected noise will occur. 
@@ -23,12 +26,12 @@ The above situation shows the following problems:
 We have provided two sets of audio files for each simulated effect in our experiments. Each sets contains DI, real, and results simulated by different models. The detailed information is shown below. 
 <hr>
 
-1. $DI$: clean audio which is considered to be the input to our model. 
-2. $RD$: effected audio which is considered to be the target we aim to simulate.
-3. $FT$: effected audio created from the model $FiLM-TCN$ 
-4. $FG$: effected audio created from the model $FiLM-GCN$ 
-5. $HG$: effected audio created from the model $Hyper-GCN$
-6. $HG_{ws}$: effected audio created from the model $Hyper_{ws}-GCN$ 
+1. `DI`: clean audio which is considered to be the input to our model. 
+2. `RD`: effected audio which is considered to be the target we aim to simulate.
+3. `FT`: effected audio created from the model `FiLM-TCN` 
+4. `FG`: effected audio created from the model `FiLM-GCN` 
+5. `HG`: effected audio created from the model `Hyper-GCN`
+6. `HG-WS`: effected audio created from the model `Hyper-GCN-WS` (Hyper-GCN with weight sharing strategy)
 
 #### EGDB + Distortion
 <table style='text-align: center;'>
@@ -36,12 +39,12 @@ We have provided two sets of audio files for each simulated effect in our experi
     <tr>
       <td></td>
       <td>db</td>
-      <td>$DI$</td>
-      <td>$RD$</td>
-      <td>$FT$</td>
-      <td>$FG$</td>
-      <td>$HG$</td>
-      <td>$HG_{ws}$</td>
+      <td>DI</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>FG</td>
+      <td>HG</td>
+      <td>HG-WS</td>
     </tr>
     <tr>
       <td rowspan="0">A</td>
@@ -55,7 +58,6 @@ We have provided two sets of audio files for each simulated effect in our experi
     </tr>
     <tr>
       <td>25</td>
-      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/A/di.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/A/25/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/A/25/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/A/25/fg.wav" type="audio/mpeg" /></audio></td>
@@ -72,12 +74,12 @@ We have provided two sets of audio files for each simulated effect in our experi
     <tr>
       <td></td>
       <td>db</td>
-      <td>$DI$</td>
-      <td>$RD$</td>
-      <td>$FT$</td>
-      <td>$FG$</td>
-      <td>$HG$</td>
-      <td>$HG_{ws}$</td>
+      <td>DI</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>FG</td>
+      <td>HG</td>
+      <td>HG-WS</td>
     </tr>
     <tr>
       <td rowspan="0">B</td>
@@ -91,7 +93,6 @@ We have provided two sets of audio files for each simulated effect in our experi
     </tr>
     <tr>
       <td>25</td>
-      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/B/di.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/B/25/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/B/25/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/Distortion/B/25/fg.wav" type="audio/mpeg" /></audio></td>
