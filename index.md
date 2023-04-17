@@ -17,7 +17,7 @@ Observation in three secanrios.
 (b) The incurred DC shift varies as a function of the imposed condition parameter for FiLM-TCN, while there is no DC bias at all for Hyper-GCN.
 <br>
 <br>
-(c) After receiving a non-silent input, we compute the mean amplitude of the output produced by the FiLM-TCN. We observe that the trend of DC bias variation is very similar to (b).
+(c) After receiving a non-silent input, we compute the mean amplitude of the output produced by the FiLM-TCN. We observe that the trend of DC bias variation is similar to (b).
 <br>
 
 <br>
