@@ -25,6 +25,8 @@ Observation in three secanrios.
 The above situation shows the following problems:
 1. If a silent input is fed into the model and produces a non-silent output, it may result in an unexpected popping sound or noise.
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
+3. As shown in the following case 2, the low frequency artifacts affect the whole audio clip. 
+
 
 #### Case 1
 <hr>
