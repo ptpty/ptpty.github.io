@@ -7,8 +7,8 @@ Micro-temporal convolutional network (micro-TCN) has gained popularity as a prom
 ## Motivation 
 
 Observation in three secanrios. 
-<img src="./assets/imgs/bias_variation.png" width="400" height="300">
-
+<img src="./assets/imgs/bias_variation.png" align='left' width="400" height="400">
+<br>
 (a) Given a silent input, the output of the FiLM-TCN has unexpectedly a DC shift, while the proposed bias-free model Hyper-GCN does not.
 <br>
 (b) The incurred DC shift varies as a function of the imposed condition parameter for FiLM-TCN, while there is no DC bias at all for Hyper-GCN.
@@ -102,6 +102,76 @@ We have provided two sets of audio files for each simulated effect in our experi
   </tbody>
 </table>
 
+#### EGDB + Tone Stack
+<table style='text-align: center;'>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>db</td>
+      <td>DI</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>FG</td>
+      <td>HG</td>
+      <td>HG-WS</td>
+    </tr>
+    <tr>
+      <td rowspan="0">A</td>
+      <td>Bass: -2, Mids: -3, Treble: 5</td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/di.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-2_-3_5/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-2_-3_5/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-2_-3_5/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-2_-3_5/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-2_-3_5/hg_ws.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>Bass: -3, Mids: 6, Treble: 5</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-3_6_5/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-3_6_5/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-3_6_5/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-3_6_5/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/A/-3_6_5/hg_ws.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table style='text-align: center;'>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>db</td>
+      <td>DI</td>
+      <td>RD</td>
+      <td>FT</td>
+      <td>FG</td>
+      <td>HG</td>
+      <td>HG-WS</td>
+    </tr>
+    <tr>
+      <td rowspan="0">B</td>
+      <td>Bass: 3, Mids: 8, Treble: -8</td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/di.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/3_8_-8/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/3_8_-8/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/3_8_-8/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/3_8_-8/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/3_8_-8/hg_ws.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td>Bass: 6, Mids: -9, Treble: 3</td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/6_9_-3/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/6_9_-3/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/6_9_-3/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/6_9_-3/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/ToneStack/B/6_9_-3/hg_ws.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
 #### EGFX
 
 <table style='text-align: center;'>
@@ -109,46 +179,38 @@ We have provided two sets of audio files for each simulated effect in our experi
     <tr>
       <td></td>
       <td>Effect Type</td>
-      <td>Clean</td>
+      <td>DI</td>
       <td>RD</td>
       <td>FT</td>
-      <td>HTS</td>
-      <td>HTL</td>
       <td>FG</td>
-      <td>HGS</td>
-      <td>HGL</td>
+      <td>HG</td>
+      <td>HG-WS</td>
     </tr>
     <tr>
       <td rowspan="0">A</td>
       <td>RAT</td>
-      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/c/clean.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/di.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>BluesDriver</td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>TubeScreamer</td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/rd-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/ft-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hts-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/htl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/fg-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/c/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
@@ -160,52 +222,43 @@ We have provided two sets of audio files for each simulated effect in our experi
     <tr>
       <td></td>
       <td>Effect Type</td>
-      <td>Clean</td>
+      <td>DI</td>
       <td>RD</td>
       <td>FT</td>
-      <td>HTS</td>
-      <td>HTL</td>
       <td>FG</td>
-      <td>HGS</td>
-      <td>HGL</td>
+      <td>HG</td>
+      <td>HG-WS</td>
     </tr>
     <tr>
       <td rowspan="0">B</td>
       <td>RAT</td>
-      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/d/clean.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-RAT.wav" type="audio/mpeg" /></audio></td>
+      <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/di.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>BluesDriver</td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-BluesDriver.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td>TubeScreamer</td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/rd-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/ft-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hts-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/htl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/fg-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
-      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/d/hgl-TubeScreamer.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/rd.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/ft.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/fg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/hg.wav" type="audio/mpeg" /></audio></td>
+      <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
 
 ### Contact 
-
 <hr>
 
 
