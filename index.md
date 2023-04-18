@@ -1,4 +1,4 @@
-This is the demo page for the paper **"Designing Bias-free Models for Neural Audio Effect Modeling"**.
+This is the anonymous demo page for the paper “Designing Bias-free Models for Neural Audio Effect Modeling” submitted to ISMIR 2023 for review.
 
 ## Abstract
 Micro-temporal convolutional network (micro-TCN) has gained popularity as a promising architecture for modeling neural audio effects. The network utilizes dilated 1D convolutions to process music in the waveform domain and incorporates conditioning modules that adjust the gain and bias of each layer based on control parameters that emulate a specific audio effect. Despite the effectiveness of micro-TCN, our research has uncovered an issue related to the biases arose from its convolution layers and conditioning modules. Such biases lead to audible artefacts at the output when the input signal is silent,  and may unfavorably decrease the headroom of dynamic range in general. To account for this issue, we propose a ``bias-free'' alternative of micro-TCN that avoids adapting the bias in each intermediate layer. This involves using gated convolutions as the model backbone, hyper networks as the conditioning module, and removing batch normalization entirely. Our experiments on emulating time-invariant guitar effects created by either software or real devices demonstrate that the proposed design eliminates unwanted DC bias without losing the capacity of micro-TCN in audio effect modeling.
@@ -23,14 +23,14 @@ Observation in three secanrios.
 <br>
 <br>
 The above situation shows the following problems:
-1. If a silent input is fed into the model and produces a non-silent output, it may result in an unexpected popping sound or noise.
+1. Given a silent input, the model may produce a non-silent output with an unexpected popping sound or noise.
 2. When the bias value fluctuates with the conditions, it can reduce the headroom of the dynamic range or cause sound clipping.
 3. As shown in the following case 2, the low frequency artifacts affect the whole audio clip. 
 
 
 #### Case 1
 <hr>
-We input silence into both models and analyze their respective outputs. As illustrated in the figure, the output of the FiLM-TCN model is no longer silent, with most of the energy concentrated at 0Hz. In contrast, our proposed Hyper-GCN model can accurately output silence as expected. We provide listening files for the below two spectrograms. 
+We input silence into both models and analyze their respective outputs. As illustrated in the figure, the output of the FiLM-TCN model is no longer silent, with most of the energy concentrated at 0Hz. In contrast, our proposed Hyper-GCN model can accurately output silence as expected. We provide audio files for the following two spectrograms.  Notice the "pop sound" in the result of FiLM-TCN
 <hr>
 ![Audio0](./assets/case_0/bias_variation_test.png 'Audio0')
 
@@ -54,11 +54,11 @@ We have provided two sets of audio files for each simulated effect in our experi
 <hr>
 
 1. `DI`: clean audio which is considered to be the input to our model. 
-2. `RD`: effected audio which is considered to be the target we aim to simulate.
-3. `FT`: effected audio created from the model `FiLM-TCN` 
-4. `FG`: effected audio created from the model `FiLM-GCN` 
-5. `HG` (proposed): effected audio created from the model `Hyper-GCN` 
-6. `HG-WS` (proposed): effected audio created from the model `Hyper-GCN-WS` (Hyper-GCN with weight sharing strategy)
+2. `Real`: effected audio which is considered to be the target we aim to simulate.
+3. `FiLM-TCN`: effected audio created by the model `FiLM-TCN` 
+4. `FiLM-GCN`: effected audio created by the model `FiLM-GCN` 
+5. `Hyper-GCN` (proposed): effected audio created by the model `Hyper-GCN` 
+6. `Hyper-GCN-WS` (proposed): effected audio created by the model `Hyper-GCN-WS` (Hyper-GCN with weight sharing strategy)
 
 #### EGDB + Distortion
 <table style='text-align: center;'>
@@ -67,11 +67,11 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>db</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">A</td>
@@ -102,11 +102,11 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>db</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">B</td>
@@ -136,11 +136,11 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>db</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">A</td>
@@ -171,11 +171,11 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>db</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">B</td>
@@ -199,7 +199,7 @@ We have provided two sets of audio files for each simulated effect in our experi
 </table>
 
 
-#### EGFX
+#### EGFxSet
 
 <table style='text-align: center;'>
   <tbody>
@@ -207,15 +207,15 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>Effect Type</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">A</td>
-      <td>RAT</td>
+      <td>RAT (Distortion)</td>
       <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/di.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/ft.wav" type="audio/mpeg" /></audio></td>
@@ -224,7 +224,7 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/RAT/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
-      <td>BluesDriver</td>
+      <td>BluesDriver (Overdrive)</td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/fg.wav" type="audio/mpeg" /></audio></td>
@@ -232,7 +232,7 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/BluesDriver/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
-      <td>TubeScreamer</td>
+      <td>TubeScreamer (Saturation)</td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/A/TubeScreamer/fg.wav" type="audio/mpeg" /></audio></td>
@@ -250,15 +250,15 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td></td>
       <td>Effect Type</td>
       <td>DI</td>
-      <td>RD</td>
-      <td>FT</td>
-      <td>FG</td>
-      <td>HG</td>
-      <td>HG-WS</td>
+      <td>Real</td>
+      <td>FiLM-TCN</td>
+      <td>FiLM-GCN</td>
+      <td>Hyper-GCN</td>
+      <td>Hyper-GCN-WS</td>
     </tr>
     <tr>
       <td rowspan="0">B</td>
-      <td>RAT</td>
+      <td>RAT (Distortion)</td>
       <td rowspan="0"><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/di.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/ft.wav" type="audio/mpeg" /></audio></td>
@@ -267,7 +267,7 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/RAT/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
-      <td>BluesDriver</td>
+      <td>BluesDriver (Overdrive)</td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/fg.wav" type="audio/mpeg" /></audio></td>
@@ -275,7 +275,7 @@ We have provided two sets of audio files for each simulated effect in our experi
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/BluesDriver/hg_ws.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
-      <td>TubeScreamer</td>
+      <td>TubeScreamer (Saturation)</td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/rd.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/ft.wav" type="audio/mpeg" /></audio></td>
       <td><audio controls="" style="width: 100px;"><source src="./assets/audios/EGFx/B/TubeScreamer/fg.wav" type="audio/mpeg" /></audio></td>
@@ -286,6 +286,7 @@ We have provided two sets of audio files for each simulated effect in our experi
 </table>
 
 ### Contact 
+We will provide contact information later.  We will share source code and model checkpoints with an open source license as well.
 <hr>
 
 
