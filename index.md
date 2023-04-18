@@ -41,7 +41,7 @@ Hyper-GCN: <audio controls=""><source src="./assets/case_0/hyper_gcn_silence.wav
 <hr>
 We fed the audio to both models, with pre-silence included. As depicted in the upper figure, we noticed that FiLM-TCN produced an unexpected low-frequency sound (0 Hz) throughout the entire audio. Particularly, we can observe the artifact's impact during the preceding 2.5 seconds and the segment between 3.5 to 4 seconds. The proposed Hyper-GCN is free from such artifacts. 
 <hr>
-![Audio1](./assets/case_1/signal_spec.png 'Audio1')
+![Audio1](./assets/case_1/square.png 'Audio1')
 
 
 FiLM-TCN: <audio controls=""><source src="./assets/case_1/film_tcn.wav" type="audio/mpeg" /></audio>
